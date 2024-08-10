@@ -5,6 +5,7 @@
 html {
   @apply bg-almost-black;
   @apply text-white;
+  @apply overflow-x-hidden
 }
 
 @layer base {
