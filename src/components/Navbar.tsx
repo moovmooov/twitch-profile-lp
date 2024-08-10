@@ -10,22 +10,16 @@ function Navbar() {
         </div>
 
         <div className="flex items-center gap-x-8">
-          <a
-            href="#"
-            className="px-4 py-3 rounded-lg border text-white border-dark-gray"
-          >
+          <a href="#" className="px-4 py-3 rounded-lg border  border-dark-gray">
             Inicio
           </a>
-          <a href="#" className="px-4 py-3 text-white border-dark-gray">
+          <a href="#" className="px-4 py-3  border-dark-gray">
             Como usar?
           </a>
         </div>
 
         <div>
-          <a
-            href="#"
-            className="px-8 py-3 bg-purple text-white font-bold rounded"
-          >
+          <a href="#" className="px-8 py-3 bg-purple  font-bold rounded">
             Entrar em contato
           </a>
         </div>
