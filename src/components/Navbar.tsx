@@ -17,11 +17,11 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-x-8">
           <a
             href="#"
-            className="px-4 py-3 rounded-lg border text-white border-dark-gray"
+            className="px-4 py-3 rounded-lg hover:text-white hover:border-dark-gray border border-transparent"
           >
             Inicio
           </a>
-          <a href="#" className="px-4 py-3 text-white border-dark-gray">
+          <a href="#" className="px-4 py-3 rounded-lg hover:text-white hover:border-dark-gray border border-transparent">
             Como usar?
           </a>
         </div>
@@ -44,9 +44,8 @@ function Navbar() {
       </div>
 
       <div
-        className={`md:hidden ${
-          isOpen ? "block" : "hidden"
-        } absolute top-16 left-0 w-full bg-dark-gray z-50`}
+        className={`md:hidden ${isOpen ? "block" : "hidden"
+          } absolute top-16 left-0 w-full bg-dark-gray z-50`}
       >
         <a
           href="#"

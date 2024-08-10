@@ -1,30 +1,41 @@
+import { isFirefox, isChrome } from "react-device-detect";
 import HeroImage from "../assets/hero-image.png";
 import CardList from "./CardList";
+import { Chrome } from "lucide-react"
 
 function Hero() {
 
+  const handleTextBrowser = () => {
+    if (isFirefox) {
+      return <span className="flex items-center gap-x-3">Instale pelo Firefox</span>
+    }
+    if (isChrome) {
+      return <span className="flex items-center gap-x-3"><Chrome />Instale pelo Chrome</span>
+    }
+    return 'Não está disponível pra este navegador de merda ai';
+  }
 
   const cardList: {
     title: string;
     color: "purple" | "blue" | "orange" | "green";
   }[] = [
-    {
-      title: "Pronomes",
-      color: "purple",
-    },
-    {
-      title: "Atividades",
-      color: "blue",
-    },
-    {
-      title: "Customização",
-      color: "orange",
-    },
-    {
-      title: "Lorem",
-      color: "green",
-    },
-  ];
+      {
+        title: "Pronomes",
+        color: "purple",
+      },
+      {
+        title: "Atividades",
+        color: "blue",
+      },
+      {
+        title: "Customização",
+        color: "orange",
+      },
+      {
+        title: "Lorem",
+        color: "green",
+      },
+    ];
 
   return (
     <header className="w-full relative">
@@ -44,9 +55,9 @@ function Hero() {
           </p>
           <a
             href="#"
-            className="px-8 py-4 bg-purple font-bold rounded inline-block w-full md:w-[initial] "
+            className="px-8 py-4 bg-purple font-bold rounded w-full md:w-[initial] inline-flex "
           >
-            Instalar
+            {handleTextBrowser()}
           </a>
         </div>
         <div className="relative flex-1 mt-10 md:mt-0">
