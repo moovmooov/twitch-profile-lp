@@ -38,7 +38,7 @@ function Hero() {
     ];
 
   return (
-    <header className="w-full relative">
+    <header className="w-full relative" id="#hero">
       <div className="px-8 md:px-1 container mx-auto flex flex-col md:flex-row items-center mt-20 md:mt-40 relative">
         <div className="flex-1 pr-0 md:pr-8 text-center md:text-left">
           <div className="mb-3 font-title">

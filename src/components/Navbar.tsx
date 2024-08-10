@@ -16,12 +16,12 @@ function Navbar() {
 
         <div className="hidden md:flex items-center gap-x-8">
           <a
-            href="#"
+            href="#hero"
             className="px-4 py-3 rounded-lg hover:text-white hover:border-dark-gray border border-transparent"
           >
             Inicio
           </a>
-          <a href="#" className="px-4 py-3 rounded-lg hover:text-white hover:border-dark-gray border border-transparent">
+          <a href="#how-to-use" className="px-4 py-3 rounded-lg hover:text-white hover:border-dark-gray border border-transparent">
             Como usar?
           </a>
         </div>

@@ -1,6 +1,6 @@
 function HowToUse() {
   return (
-    <div className="container mx-auto flex flex-col items-center h-svh gap-y-28 pt-40 md:pt-[initial]">
+    <div className="container mx-auto flex flex-col items-center h-svh gap-y-28 pt-40 md:pt-[initial]" id="#how-to-use">
       <h1 className="font-title text-[2rem]">Como usar?</h1>
       <iframe
         src="https://www.youtube.com/embed/hB7CDrVnNCs?si=1EMNBXlPx9xIj2jd"
