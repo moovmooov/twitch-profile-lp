@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
+        title: ["Cal Sans"],
       },
       colors: {
         "light-gray": "#FDFDFD",
